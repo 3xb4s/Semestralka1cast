@@ -3,41 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <title>ABOUT</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <li><a href="HlavnaStrana.html">Domov</a></li>  <! items of the list >
-            <li><a href="Obchod.html">Obchod</a></li>
-            <li><a href="Kontakty.html">Kontakt</a></li>
+    <header class="hlavnyHeader">
+        <nav class="navigation hlavnaNavigation">
+            <li><a href="HlavnaStrana.html">DOMOV</a></li>  <!-- items of the list -->
+            <li><a href="Obchod.html">OBCHOD</a></li>
+            <li><a href="Kontakty.html">KONTAKT</a></li>
         </nav>
-        <hr>                <! ciara rozdelujuca items od textu
-        <h1>LUCKY 7 TATTOO</h1>
+        <h1 class="nazov ">FAMOUS OLLIE TATTOO STUDIO</h1>
         </header>
 
-        <section>           <! definujem section o studiu >
-            <h2>O ŠTÚDIU</h2>
-            <p>             <! paragraph>
-                Štúdio bolo založené v centre Žiliny v roku 2020 Amnorom a Junim.
-                Neskôr sa pridali Nikolson , Key a Heffner.
-                Keďže časom vzrástol aj záujem o piercing, pribrali sme tretieho člena posádky - Michelle.
+        <section class="kontent maxVelkostKontentu">           <!-- definujem section o studiu -->
+            <h2 class=" sectionHeader">O ŠTÚDIU</h2>
+            <img class="imageLogo"  height="450px"  src="Obrazy/logo.png">
+            <p class="para" >             <! paragraph>
+                Tetovacie štúdio bolo založené v centre Žiliny na začiartku roku 2014 Amnorom a Junim.
+            </p>
+
+            <p class="para">
+                Po 4 rokoch, tvorenia v tomto malom štúdiu, nám začalo byť trošku tesno, a tak sme sa rozhodli presunúť do podstatne väčších priestorov o vchod vedľa.
+                S pribádajúcimi spokojnými zákazníkmi sme sa rozhodli rozšíriť náš kolektív o mladé pušky, Key , Heffner a Nikolson.
+            </p>
+
+            <p class="para">
+                Keďže časom vzrástol aj záujem o piercing, pribrali sme šiesteho člena posádky , experta na piercingy menom Michelle.
                 Tak sa stal náš tím kompletným a vy si teraz u nás môžte vybrať tatéra podľa svojej chuti, alebo si dať čokoľvek prepichnúť.
             </p>
-            <img height="300px"  src="Obrazy/logo.png">
-            <p>
-                Venujeme sa ako aj vlastnej tvorbe, tak aj nápisom, menším dizajnom a doneseným motívom. Vždy radi a ochotne poradíme, či už s veľkosťou, umiestnením, farebnosťou alebo starostlivosťou. A Michelle sa pokojne spýtajte, kam by sa vám piercing najviac hodil.
 
+            <p class="para">
+                Venujeme sa ako aj vlastnej tvorbe, tak aj nápisom, menším dizajnom a doneseným motívom.
+                Vždy radi a ochotne poradíme, či už s veľkosťou, umiestnením, farebnosťou alebo starostlivosťou.
+                A Michelle sa pokojne spýtajte, kam by sa vám piercing najviac hodil.
                 Tešíme sa na spoluprácu, budeme radi, ak vás naše práce oslovia a vrátite sa aj po ďalšiu ozdobu.
             </p>
         </section>
 
-        <footer>        <! group textu ktora bude na spodku>
-            <h3>Sociálne siete</h3>
-            <ul>
-                <li><img width="50px" height="50px" src="Obrazy/insta2.png"></li>
-                <li><img width="50px" height="50px" src="Obrazy/fb2.png"></li>
-                <li><img width="50px" height="50px" src="Obrazy/ytb2.png"></li>
+        <footer class="hlavnyFooter">        <!-- group textu ktora bude na spodku-->
+            <h4 class="nazovSpodok">Sociálne siete</h4>
+            <div class="spodnyBaner">
+            <ul class="navigation footerNavigacia">
+                <li>
+                    <a href="https://instagram.com" target="_blank">
+                    <img width="50px" height="50px" src="Obrazy/insta2.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://facebook.com" target="_blank">
+                    <img width="50px" height="50px" src="Obrazy/fb2.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://youtube.com" target="_blank">
+                    <img width="50px" height="50px" src="Obrazy/ytb2.png">
+                    </a>
+                </li>
             </ul>
+            </div>
         </footer>
 </body>
 </html>

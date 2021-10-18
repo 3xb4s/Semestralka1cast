@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    font-size: large;
+    font-family: "Yu Gothic UI";
+    color: black;
+
+}
+
+html , body { /* nech niesu medzery z vrchu ani spodku* bannera*/
+    margin: 0;
+    padding: 0;
+}
+
+.navigation ul {  /* nech len ul v nave ma margin nulu */
+    margin: 0;
+}
+
+.navigation li {
+    display: inline; /* elemetny v li su ya sebou a nie pod sebou*/
+}
+
+.navigation a {
+    display: inline-block; /* inline block , lebo predtym nad davalo len po bokoch rozdielenie , teraz dava aj hore aj dole */
+    padding: .5em; /* vyzdialime ich od seba trocha*/
+    color: white; /* na pozadi je lepsie vidno bielu */
+    text-decoration: none; /* neukazuje ciarocku pod textom */
+
+}
+
+.hlavnaNavigation {
+    text-align: center;
+    font-size: 1.1em; /* vacsi font okolo 10 percent*/
+    font-weight: lighter; /* nech sa lepsie blenduje s pozaadim*/
+    border-bottom: 1px solid whitesmoke; /* ciara medzi linkami a nazom tatto shopu */
+
+}
+
+.hlavnaNavigation li{
+    padding: 0 5%;  /* rozdelenie stranok na preklikavanie od seba */
+}
+
+.navigation a:hover {
+    background-color: rgba(255,255,255,.3); /* ukazuje box nad ktorym mame mysku*/
+}
+
+.hlavnyHeader {
+    background-color: rgba(0,20,20,.2);  /* 20 percent viditelnost */
+    background-image: url("Obrazy/headerbackground2.jpg");
+    background-blend-mode: multiply; /* prepojenie ,nech je pozadie trocha inej farby */
+    background-size: cover;
+    padding-bottom: 30px; /* chceme nech mame priestor pod textom s nayvom tattoo shopu*/
+}
+
+.nazov {
+    text-align: center;
+    margin: 0;
+    font-size: 3em;
+    font-family: "Bookman Old Style";
+    color: saddlebrown;
+}
+
+.nazovSpodok {
+    text-align: left;
+    margin: 0em;
+    font-size: 3em;
+    font-family: "Bookman Old Style";
+    color: rosybrown;
+}
+
+.kontent {
+    margin: 0.2em;  /* oddelenie od stran*/
+    background-color: silver;
+}
+
+.maxVelkostKontentu {
+    max-width: 1000px;
+    margin: 0 auto; /* text bude vzdy v centre pomocou auto margin z oboch stran */
+    /* padding: 0 1.5em; */
+}
+
+.sectionHeader {
+    font-family: Serif;
+    text-align: center;
+    font-size: 2.5em; /* 2 a pol krat zvacsim header2*/
+}
+
+.imageLogo {
+    float: left  /* pojde do lava*/
+
+}
+
+.para {
+    font-size: larger;
+}
+
+.hlavnyFooter {
+    background-image: url("https://3.bp.blogspot.com/-hmTyMytKc0k/W_SI-gTYvmI/AAAAAAAABQM/1p_FASIk-2Uw8-hPifbepGnEl-3hb8tvQCHMYCw/s1600/black-background-wood-%25E2%259D%25A4-4k-hd-desktop-wallpaper-for-4k-ultra-hd.jpg");
+    padding: .25em 0;
+
+}
+
+.spodnyBaner {
+    display: flex;
+    align-items: center;
+}
+
+.spodnyBaner ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footerNavigacia li {
+    padding: 0 .5em;
+}
+
