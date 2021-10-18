@@ -113,3 +113,81 @@ html , body { /* nech niesu medzery z vrchu ani spodku* bannera*/
     padding: 0 .5em;
 }
 
+.butt {
+    text-align: center;
+    vertical-align: middle;
+    padding: .6em;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    border: 2px solid purple;
+    border-radius: 20%;
+
+}
+
+.butt:hover {
+    background-color: purple;
+    color: white;
+}
+
+.kontaktRozdelenie {
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.kontaktRozdelenie:last-child {
+    border-bottom: none;
+}
+
+.kontaktCely {
+    display: inline-block;
+    padding-right: .5em;
+}
+
+.kontaktMeno {
+    color: black;
+    font-weight: bold;
+    width: 32%;
+}
+
+.kontaktSpecial {
+   padding-right: .5em;
+    width: 55%;
+    flex-grow: 1;
+}
+
+.obchodItem {
+    margin: 30px;
+}
+
+.obchodItemNazov {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.obchodItemObraz {
+    height: 250px;
+}
+
+.obchodItemDetaily {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.obchodItemCena {
+    flex-grow: 1;
+    color: black;
+}
+
+.obchodItemy {
+    displey: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
