@@ -157,22 +157,22 @@ html , body { /* nech niesu medzery z vrchu ani spodku* bannera*/
     flex-grow: 1;
 }
 
-.obchodItem {               /* rozdiel od spodneho itemu */
+.obchodItem {               /* rozdiel od  itemu */
     margin: 30px;
+    margin-bottom: 85px;
 }
 
 .obchodItemNazov {
-    display: block;
-    width: 100%;
+    display: block;         /* je sam o sebe */
+    width: 100%;            /* celu sirku */
     text-align: center;
     font-weight: bold;
-    font-size: 1.5em;
     color: black;
     margin-bottom: 15px;
 }
 
 .obchodItemObraz {
-    height: 250px;
+    height: 390px;
 
 }
 
@@ -181,11 +181,11 @@ html , body { /* nech niesu medzery z vrchu ani spodku* bannera*/
     color: black;
     display: inline-block;
     float: left;
+
 }
 
 
 .obchodItemCenter {
-
     display: inline-block;
 }
 
@@ -200,11 +200,9 @@ html , body { /* nech niesu medzery z vrchu ani spodku* bannera*/
 
 .obchodItemyWraper {
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 
 }
 
-
-.obchodItem {
-    margin-bottom: 25px;
-
-}
