@@ -75,7 +75,6 @@ html , body { /* nech niesu medzery z vrchu ani spodku* bannera*/
 .maxVelkostKontentu {
     max-width: 1000px;
     margin: 0 auto; /* text bude vzdy v centre pomocou auto margin z oboch stran */
-    /* padding: 0 1.5em; */
 }
 
 .sectionHeader {
@@ -100,7 +99,7 @@ html , body { /* nech niesu medzery z vrchu ani spodku* bannera*/
 }
 
 .spodnyBaner {
-    display: flex;
+    display: flex;                  /* flexibilny footer , teda dame vedla nayvu ikonkz sieti soc */
     align-items: center;
 }
 
@@ -110,10 +109,10 @@ html , body { /* nech niesu medzery z vrchu ani spodku* bannera*/
 }
 
 .footerNavigacia li {
-    padding: 0 .5em;
+    padding: 0 .5em;            /* padding medzi ikonkami */
 }
 
-.butt {
+.butt {                             /* insta button v kontaktoch */
     text-align: center;
     vertical-align: middle;
     padding: .6em;
@@ -121,22 +120,23 @@ html , body { /* nech niesu medzery z vrchu ani spodku* bannera*/
     color: black;
     background-color: white;
     border: 2px solid purple;
-    border-radius: 20%;
+    border-radius: 20%;             /* nechceme kocku , ale zaoblene okraje */
 
 }
 
-.butt:hover {
+.butt:hover {                       /* myska nad tlacidlom meni farby */
     background-color: purple;
     color: white;
 }
 
 .kontaktRozdelenie {
-    border-bottom: 1px solid black;
-    padding-bottom: 1em;
-    margin-bottom: 1em;
+    border-bottom: 1px solid black;         /* spodna ciarka medzi kontaktmi */
+    padding-bottom: 1em;                      /* mezdera pred ciarov */
+    margin-bottom: 1em;                     /* mezdera za ciarov */
+    display: flex;                          /* nech nejde nic pod seba */
 }
 
-.kontaktRozdelenie:last-child {
+.kontaktRozdelenie:last-child {             /* posledny nema ciaru ciernu */
     border-bottom: none;
 }
 
@@ -157,7 +157,7 @@ html , body { /* nech niesu medzery z vrchu ani spodku* bannera*/
     flex-grow: 1;
 }
 
-.obchodItem {
+.obchodItem {               /* rozdiel od spodneho itemu */
     margin: 30px;
 }
 
@@ -173,21 +173,38 @@ html , body { /* nech niesu medzery z vrchu ani spodku* bannera*/
 
 .obchodItemObraz {
     height: 250px;
+
 }
 
-.obchodItemDetaily {
-    display: flex;
-    align-items: center;
-    padding: 5px;
-}
 
 .obchodItemCena {
-    flex-grow: 1;
     color: black;
+    display: inline-block;
+    float: left;
 }
 
-.obchodItemy {
-    displey: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+
+.obchodItemCenter {
+
+    display: inline-block;
+}
+
+.obchodCenaAButt {
+    text-align: center;
+}
+
+.obchodItemButt {
+    display: inline-block;
+    float: right;
+}
+
+.obchodItemyWraper {
+    text-align: center;
+
+}
+
+
+.obchodItem {
+    margin-bottom: 25px;
+
 }
